@@ -14,7 +14,7 @@
         }
 
         header {
-            background: #333;
+            background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -23,6 +23,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         nav ul {
@@ -73,6 +74,7 @@
             max-width: 200px;
             border-radius: 50%;
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
         .project {
@@ -125,9 +127,9 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="profile.jpg" alt="Awanish Kumar">
+                <img src="profile.jpg">
                 <p><strong>Name:</strong> Awanish Kumar</p>
-                <p><strong>Position:</strong> SDE 2 at Smilte Internet Technology</p>
+                <p><strong>Position:</strong> SDE 2 at Smile Internet Technology</p>
                 <p><strong>Experience:</strong> 2 years in Python, AWS, MySQL, Elasticsearch, REST API, System Design</p>
             </div>
         </div>
@@ -146,19 +148,26 @@
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
-                <button type="submit" style="background: #333; color: #fff; border: none; padding: 10px 20px; cursor: pointer;">Send</button>
-            </form>
-        </div>
-    </section>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: calc(100% - 10px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+                <div style="flex: 1;">
+                    <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+                    <input type="email" id="email" name="email" required style="width: calc(100% - 10px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+            </div>
+            <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
+            <textarea id="message" name="message" required style="width: calc(100% - 10px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            <button type="submit" style="background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Send</button>
+        </form>
+    </div>
+</section>
+
 
     <footer>
         <div class="container">
